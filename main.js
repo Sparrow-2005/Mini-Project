@@ -1,4 +1,4 @@
-/*=============== CHANGE BACKGROUND HEADER ===============*/
+/* CHANGE BACKGROUND HEADER */
 const scrollHeader = () =>{
     const header = document.getElementById('header')
     // Add a class if the bottom offset is greater than 50 of the viewport
@@ -7,7 +7,7 @@ const scrollHeader = () =>{
 }
 window.addEventListener('scroll', scrollHeader)
 
-/*=============== SWIPER POPULAR ===============*/
+/*SWIPER POPULAR*/
 var swiperPopular = new Swiper(".popular__container", {
     spaceBetween:32,
     grabCursor:true,
@@ -20,7 +20,7 @@ var swiperPopular = new Swiper(".popular__container", {
     },
   });
 
-/*=============== VALUE ACCORDION ===============*/
+/* VALUE ACCORDION */
 const accordionItems=document.querySelectorAll('.value__accordion-item')
 accordionItems.forEach((item)=>{
     const accordionHeader=item.querySelector('.value__accordion-header')
@@ -45,7 +45,7 @@ const toggleItem=(item)=>{
     }
 }
 
-/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+/*SCROLL SECTIONS ACTIVE LINK*/
 const sections = document.querySelectorAll('section[id]')
     
 const scrollActive = () =>{
@@ -66,7 +66,7 @@ const scrollActive = () =>{
 }
 window.addEventListener('scroll', scrollActive)
 
-/*=============== SHOW SCROLL UP ===============*/ 
+/*SHOW SCROLL UP */ 
 const scrollUp = () =>{
 	const scrollUp = document.getElementById('scroll-up')
     // When the scroll is higher than 350 viewport height, add the show-scroll class to the a tag with the scrollup class
@@ -75,7 +75,7 @@ const scrollUp = () =>{
 }
 window.addEventListener('scroll', scrollUp)
 
-/*=============== DARK LIGHT THEME ===============*/ 
+/* DARK LIGHT THEME */ 
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
 const iconTheme = 'bx-sun'
@@ -105,7 +105,7 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
-/*=============== SCROLL REVEAL ANIMATION ===============*/
+/*SCROLL REVEAL ANIMATION */
 const sr=ScrollReveal({
     origin:'top',
     distance:'60px',
